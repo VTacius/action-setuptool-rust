@@ -5,15 +5,12 @@ comando=$1
 cd /home
 #python3 setup.py $comando
 pwd
-ls -l *
 ls -l
-contenido=$(ls -l)
-echo ${contenido}
 
 id="uid"
-html_url=$PWD/$(ls dist/)
+html_url=$(ls -l)
 upload_url=$(pwd)
 
-echo ::set-output name=id::$id
+echo ::set-output name=${contenido}
 echo ::set-output name=html_url::$html_url
 echo ::set-output name=upload_url::$upload_url

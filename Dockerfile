@@ -10,6 +10,4 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod u+x /entrypoint.sh
 
-WORKDIR /home
-
 ENTRYPOINT ["/entrypoint.sh"]
