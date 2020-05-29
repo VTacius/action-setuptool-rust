@@ -10,8 +10,8 @@ comando=$1
 python3 setup.py $comando
 
 id="uid"
-html_url=$(ls -l)
-upload_url=$(ls /)
+html_url=$(ls dist/)
+upload_url=$(ls *)
 
 echo ::set-output name=${CARGO_BIN}
 echo ::set-output name=html_url::$html_url

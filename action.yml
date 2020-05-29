@@ -5,7 +5,7 @@ inputs:
   comando:  # id of input
     description: 'Comando de setuptools a ejecutar'
     required: true
-    default: 'build'
+    default: 'bdist'
 outputs:
   id:
     description: 'The ID of the created Release'
