@@ -3,7 +3,12 @@ set -e -x
 
 comando=$1
 cd /home
-python3 setup.py $comando
+#python3 setup.py $comando
+pwd
+ls -l *
+ls -l
+contenido=$(ls -l)
+echo ${contenido}
 
 id="uid"
 html_url=$PWD/$(ls dist/)
